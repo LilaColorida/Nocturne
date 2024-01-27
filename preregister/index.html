@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nocturne: Secretos de la noche</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Arial', sans-serif;
+                background-image: url('portada4.jpg'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta de tu imagen de fondo */
+                background-size: cover;
+                background-position: center;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                text-align: center;
+            }
+
+           
+            h2 {
+                padding-top: 200px;
+                padding-right: 60px;
+                font-size: 3em;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            }
+
+            form {
+                margin-top: 200px;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 10px;
+                width: 300px; /* Ajusta el ancho del formulario según tus necesidades */
+            }
+
+            label {
+                font-size: 1.2em;
+                margin-right: 10px;
+            }
+
+            input {
+                padding: 10px;
+                margin-top: 12px;
+                margin-bottom: 2px;
+                width: 100%;
+                box-sizing: border-box;
+                border: none;
+                border-radius: 5px;
+            }
+
+            input[type="submit"] {
+                background-color: #8e44ad; /* Puedes cambiar el color según tus preferencias */
+                color: #ffffff;
+                cursor: pointer;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #6c3483; /* Cambia el color al pasar el ratón */
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Preregistro</h2>
+        <form action="./process.php" method="POST">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
